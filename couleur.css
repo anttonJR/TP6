@@ -34,18 +34,96 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 0 5px 20px 5px;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
+#paletteBtn {
+    background-color: #2196F3;
+}
+
+#paletteBtn:hover {
+    background-color: #0b7dda;
+}
+
+.couleur-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#apercuCouleur {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+#apercuCouleur:hover {
+    transform: scale(1.1);
+}
+
 #codeCouleur {
     font-size: 24px;
     font-weight: bold;
     color: #333;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+#codeCouleur:hover {
+    background-color: #f0f0f0;
+}
+
+#palette {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 20px;
+}
+
+.palette-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.palette-item:hover {
+    transform: scale(1.05);
+}
+
+.palette-code {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.indication {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
 }
 
 
